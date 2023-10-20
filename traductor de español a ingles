@@ -1,0 +1,13 @@
+pip install googletrans==4.0.0-rc1
+from googletrans import Translator, LANGUAGES
+
+def translate_spanish_to_english(text):
+    translator = Translator()
+    translated = translator.translate(text, src='es', dest='en')
+    return translated.text
+
+if __name__ == "__main__":
+    spanish_text = "Hola, ¿cómo estás? mi nombre es julian "
+    english_translation = translate_spanish_to_english(spanish_text)
+    print("Texto en español:", spanish_text)
+    print("Traducción al inglés:", english_translation)
