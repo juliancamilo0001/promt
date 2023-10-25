@@ -1,0 +1,26 @@
+pip install PyPDF2
+import PyPDF2
+import re
+
+def contar_palabras_en_pdf(pdf_file):
+    try:
+        pdf = PyPDF2.PdfReader(pdf_file)
+        num_palabras = 0
+
+        for page in pdf.pages:
+            text = page.extract_text()
+            words = re.findall(r'\b\w+\b', text)  # Encuentra palabras alfanuméricas
+            num_palabras += len(words)
+
+        return num_palabras
+    except Exception as e:
+        return str(e)
+
+if __name__ == '__main__':
+    pdf_file = 'pag.pdf'  # Reemplaza 'tu_archivo.pdf' con el nombre de tu archivo PDF
+    num_palabras = contar_palabras_en_pdf(pdf_file)
+
+    if isinstance(num_palabras, int):
+        print(f"El PDF contiene {num_palabras} palabras.")
+    else:
+        print(f"No se pudo contar las palabras: {num_palabras}")
