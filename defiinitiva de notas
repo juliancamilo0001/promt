@@ -1,0 +1,79 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMQb2wKsY10nNx2v5SujgNL",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/juliancamilo0001/promt/blob/main/defiinitiva%20de%20notas\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "while True:\n",
+        "    try:\n",
+        "        # Ingresar las calificaciones del estudiante\n",
+        "        calificacion1 = float(input(\"Ingresa la calificación 1: \"))\n",
+        "        calificacion2 = float(input(\"Ingresa la calificación 2: \"))\n",
+        "        calificacion3 = float(input(\"Ingresa la calificación 3: \"))\n",
+        "        calificacion4 = float(input(\"Ingresa la calificación 4: \"))\n",
+        "\n",
+        "        # Calcula el promedio de calificaciones\n",
+        "        promedio = (calificacion1 + calificacion2 + calificacion3 + calificacion4) / 4\n",
+        "\n",
+        "        # Comprueba si el estudiante pasa o no\n",
+        "        if promedio >= 3.0:\n",
+        "            print(f\"El promedio del estudiante es {promedio:.2f}, el estudiante pasa.\")\n",
+        "        else:\n",
+        "            print(f\"El promedio del estudiante es {promedio:.2f}, el estudiante no pasa.\")\n",
+        "        break  # Sale del ciclo si se ingresan calificaciones válidas\n",
+        "    except ValueError:\n",
+        "        print(\"Por favor, ingresa calificaciones válidas (números). Intenta de nuevo.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nX2wXsx5J_jI",
+        "outputId": "5cfee4c6-84a7-492d-ac52-53a15ff69317"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingresa la calificación 1: 5\n",
+            "Ingresa la calificación 2: 1\n",
+            "Ingresa la calificación 3: \n",
+            "Por favor, ingresa calificaciones válidas (números). Intenta de nuevo.\n",
+            "Ingresa la calificación 1: 5\n",
+            "Ingresa la calificación 2: 1\n",
+            "Ingresa la calificación 3: 5\n",
+            "Ingresa la calificación 4: 4\n",
+            "El promedio del estudiante es 3.75, el estudiante pasa.\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
