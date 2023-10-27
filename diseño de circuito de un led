@@ -1,0 +1,38 @@
+pip install matplotlib
+import matplotlib.pyplot as plt
+
+# Coordenadas de los componentes
+battery_x = [0, 0]
+battery_y = [0, 1]
+
+resistor_x = [0, 2]
+resistor_y = [1, 1]
+
+led_x = [2, 4]
+led_y = [1, 1]
+
+# Conexión para cerrar el circuito
+connection_x = [4, 0]
+connection_y = [1, 0]
+
+# Dibuja la batería
+plt.plot(battery_x, battery_y, 'bo-')
+plt.text(0, 0.5, 'Batería', fontsize=12, ha='right')
+
+# Dibuja la resistencia
+plt.plot(resistor_x, resistor_y, 'ro-')
+plt.text(1, 1.1, 'Resistencia', fontsize=12, ha='center')
+
+# Dibuja el LED
+plt.plot(led_x, led_y, 'go-')
+plt.text(3, 1.1, 'LED', fontsize=12, ha='center')
+
+# Conexión para cerrar el circuito
+plt.plot(connection_x, connection_y, 'k-')
+
+# Configuración de la gráfica
+plt.axis('equal')
+plt.axis('off')
+
+# Muestra el circuito
+plt.show()
