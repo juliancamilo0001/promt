@@ -1,1 +1,1 @@
-# codigos que puedes hacer con colab
+# codigos que puedes hacer en google.colaboratory
