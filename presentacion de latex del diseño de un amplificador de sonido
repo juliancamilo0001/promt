@@ -1,0 +1,64 @@
+\documentclass{beamer}
+\usepackage{graphicx}
+
+\title{Diseño de un Amplificador de Sonido Simple}
+\author{julian camilo ballesteros }
+\date{\today}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}{Introducción}
+    \begin{itemize}
+        \item Amplificador de Sonido Simple
+        \item Utiliza un Amplificador Operacional (Op-Amp)
+        \item Configuración Amplificadora No Inversora
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Materiales Necesarios}
+    \begin{itemize}
+        \item Amplificador Operacional (Op-Amp) como el LM741 o el TL071
+        \item Resistencias:
+        \begin{itemize}
+            \item R1: 10 kΩ
+            \item R2: 20 kΩ
+        \end{itemize}
+        \item Fuente de alimentación (±Vcc)
+        \item Entrada de Audio
+        \item Altavoces o Carga de Salida
+        \item Conexión a Tierra (GND)
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Diseño del Circuito}
+    \begin{figure}
+        \includegraphics[width=0.9\textwidth]{di.png}
+        \caption{Diagrama del Amplificador de Sonido Simple}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Instrucciones Generales}
+    \begin{itemize}
+        \item La "Entrada de Audio" representa la señal de audio que deseas amplificar.
+        \item "R1" es una resistencia que conecta la señal de entrada a la entrada no inversora (+) del amplificador operacional (Op-Amp).
+        \item El Op-Amp se representa con (+) y (-), donde la entrada no inversora (+) está conectada a través de "R1" y la entrada inversora (-) se conecta a la salida del Op-Amp.
+        \item"R2" es otra resistencia que conecta la entrada inversora (-) del Op-Amp a la salida del Op-Amp.
+        \item La "Salida a Altavoces" es la salida amplificada que se conecta a los altavoces o a la carga de salida.
+        \item La conexión a tierra (GND) se proporciona para completar el circuito.
+        \item Ajusta los valores de las resistencias R1 y R2 según la ganancia deseada.
+    \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Conclusión}
+    \begin{itemize}
+        \item Este diseño es una configuración amplificadora no inversora simple.
+        \item Puedes ajustar la ganancia cambiando los valores de R1 y R2.
+        \item Consulta a un ingeniero electrónico para un diseño más completo y específico.
+    \end{itemize}
+\end{frame}
+
+\end{document}
