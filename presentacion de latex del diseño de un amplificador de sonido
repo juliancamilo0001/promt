@@ -8,8 +8,15 @@
 \begin{document}
 
 \frame{\titlepage}
+\begin{frame}{Introduccion}
+    \begin{itemize}
+        \item Esta presentación aborda el diseño de un Amplificador de Sonido Simple, una herramienta fundamental en el ámbito de la electrónica de audio. Exploraremos los componentes clave necesarios para construir este amplificador, desde el uso de un Amplificador Operacional (Op-Amp) hasta la función y conexión de resistencias para lograr la amplificación deseada.
 
-\begin{frame}{Introducción}
+Además, se detallarán los pasos necesarios para configurar este amplificador, incluyendo la interconexión de los componentes, el ajuste de las resistencias para controlar la ganancia y la forma en que la señal de entrada se amplifica y se dirige a la salida.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Objetivos}
     \begin{itemize}
         \item Amplificador de Sonido Simple
         \item Utiliza un Amplificador Operacional (Op-Amp)
@@ -55,9 +62,9 @@
 
 \begin{frame}{Conclusión}
     \begin{itemize}
-        \item Este diseño es una configuración amplificadora no inversora simple.
+        \item Este diseño es una configuración de un amplificador no inversor simple.
         \item Puedes ajustar la ganancia cambiando los valores de R1 y R2.
-        \item Consulta a un ingeniero electrónico para un diseño más completo y específico.
+        
     \end{itemize}
 \end{frame}
 
