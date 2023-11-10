@@ -8,10 +8,10 @@ x="hola como estan, este curso aprobaremos."
 # Traduce el texto de español a inglés
 translated_text_es_to_en = translator_es_to_en()
 
-# Inicializa el modelo para traducción de inglés a portugués
+# Inicializa el modelo para traducción de inglés a frances
 translator_en_to_pt = pipeline("translation", model="Helsinki-NLP/opus-mt-en-fr")
 
-# Traduce el texto de inglés a portugués
+# Traduce el texto de inglés a frances
 translated_text_en_to_pt = translator_en_to_pt(translated_text_es_to_en[0]["translation_text"])
 
 print("Texto en español:", x)
